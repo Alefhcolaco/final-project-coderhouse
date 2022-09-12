@@ -93,7 +93,6 @@ p {
     font-weight: 100;
 }
 
-
 .form{
     display: block;
     margin: 0 auto;
@@ -143,32 +142,38 @@ form {
     padding-bottom: 20px;
 }
 
-.btn {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #ff5e00;
-    color: white;
-    border-radius: 5px;
-    padding-top:12px;
-    padding-bottom: 12px;
-    padding-left: 18px;
-    padding-right: 18px;
-    font-size: 17px;
-    position: relative;
-    top:30px;
-    text-transform: uppercase;
-    transition: 0.15s ease;
-    cursor: pointer;
-    font-weight: 600;
-    border-width: 1.5px;
-    border-style: solid;
-    border-color: #ffffff;
+button {
+    border:none;
 }
 
-.btn:hover {
-    border-style: solid;
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    border: 3px solid #ff5e00;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 0.15s ease;
+    background: #ff5e00;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    animation: pulsate 1s ease-in-out;
     border-color: #ff5e00;
-    color:#ff5e00;
-    background-color: white;
+    color: #ff5e00;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 
+        0 0 25px #ff5e00,
+        0 0 50px #ffa46f;
+    }
 }
 
 footer {
